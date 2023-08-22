@@ -12,6 +12,7 @@ int main(){
     char ch;
     nodetype *head=NULL;
     do{
+        //creating linked list
         nodetype*p;
         p=(nodetype*)malloc(sizeof(nodetype*));
         if(p==NULL){
@@ -32,7 +33,7 @@ int main(){
     int ans;
     ans=getMiddle(head);
     printf("%d",ans);
-
+//releasing memory 
      while (head != NULL) {
         nodetype *temp = head;
         head = head->next;
@@ -40,7 +41,7 @@ int main(){
     }
     return 0;
 }
-
+//Function to find middle of a linked list 
 int getMiddle(nodetype*hd){
     nodetype*z=hd;
     int counter=0;
