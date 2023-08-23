@@ -12,6 +12,7 @@ int main(){
     nodetype* head=NULL;
     char ch;
     do{
+        //creating linked list
         nodetype*p;
         p=(nodetype*)malloc(sizeof(nodetype*));
         if(p==NULL){
@@ -36,7 +37,7 @@ int main(){
     printf("%d",ans);
     return 0;
 }
-
+//function to delete nth node from end of linked list
 int NthNodefromENd(nodetype*hd,int k){
     nodetype*first=hd;
     nodetype*second=hd;
